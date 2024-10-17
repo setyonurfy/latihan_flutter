@@ -1,7 +1,5 @@
 # tugas1
 
-test test
-
 A new Flutter project.
 
 ## Getting Started
