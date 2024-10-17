@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
                           shape: BoxShape.circle),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Text(
@@ -57,13 +57,81 @@ class MyApp extends StatelessWidget {
               child: Column(
                 children: [
                   Expanded(
-                      child: Column(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(vertical: 5.0),
-                      )
-                    ],
-                  ))
+                    child: Column(
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(vertical: 5.0),
+                          child: const Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Text',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text('text')
+                            ],
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(vertical: 5.0),
+                          child: const Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Text',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text('text')
+                            ],
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(vertical: 5.0),
+                          child: const Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Text',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text('text')
+                            ],
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(vertical: 5.0),
+                          child: const Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Text',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text('text')
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.red, elevation: 5.0),
+                    onPressed: () => print('Button Click'),
+                    child: Container(
+                      width: double.infinity,
+                      padding: EdgeInsets.symmetric(vertical: 10.0),
+                      alignment: Alignment.center,
+                      child: const Text(
+                        'Update Date',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ))
