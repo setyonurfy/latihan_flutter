@@ -66,7 +66,7 @@ class MyApp extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                'Text',
+                                'Textt',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               Text('text')
